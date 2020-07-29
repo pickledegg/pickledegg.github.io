@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>404 | Hexo</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="404 | Hexo">
+  <title>Nssm使用说明 | Hexo</title>
+  <meta name="keywords" content=" Nssm , Service ">
+  <meta name="description" content="Nssm使用说明 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
@@ -304,19 +304,36 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-Nssm使用" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">404</h1>
+        <h1 class="article-title">Nssm使用说明</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="工具">工具</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">Nssm</a>
+            
+            <a class="color3">Service</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-07-29 09:01:28'>2020-07-29 09:00</time>
+            Created At : <time class="date" title='Updated At: 2020-07-29 09:37:43'>2020-07-29 09:18</time>
         
     </div>
     <div class="article-meta">
@@ -354,7 +371,44 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p><strong>一、Nssm介绍</strong></p>
+<blockquote>
+<p><a href="http://www.nssm.cc/" target="_blank" rel="noopener">NSSM</a>是一款可将Nodejs项目注册为Windows系统服务的工具。当你的Node.js项目需要部署在Windows Server上时，NSSM是一个不错的选择,它还可以安装exe、bat等程序或文件到win 服务。</p>
+</blockquote>
+<p><strong>二、使用</strong> </p>
+<p>1、下载nssm解压，根据系统然后选择使用32位还是64位<br>      下载地址：<a href="http://www.nssm.cc/download" target="_blank" rel="noopener">http://www.nssm.cc/download</a> </pre></p>
+<p><img src="https://cdn.52degg.top/nssm1.png" alt=""></p>
+<p>2、win32或者win64目录进入命令窗口</pre></p>
+<p><img src="https://cdn.52degg.top/nssm2%EF%BC%881%EF%BC%89.png" alt=""></p>
+<p>3、安装服务<br>  输入nssm install &lt;服务名&gt;，按回车进入到设置界面 </pre></p>
+<p><img src="https://cdn.52degg.top/nssm3.png" alt=""></p>
+<p>  Service name：服务名<br>  Application：应用** </pre></p>
+<p><img src="https://cdn.52degg.top/nssm4.png" alt=""></p>
+<p> Path：设置为服务启动的文件路径  （点击…选择路径）</p>
+<p> Startup directory：启动目录 （Path选好后会自带出来）</p>
+<p>Arguments：参数 （可不设）</p>
+<p> Details：详情  </p>
+<p><img src="https://cdn.52degg.top/nssm5.png" alt=""></p>
+<p> mathematica<br>Display name：显示名称<br>Dsecription：描述<br>Startup type：启动类型<br>Automatic-自动<br>Automatic(Delayed Start)-自动(延迟启动)<br>Manual-手动 Disabled-禁用<br>I/O：<br><img src="https://cdn.52degg.top/nssm6.png" alt=""></p>
+<p>Input(stdin)：输入日志位置 （可不设）</p>
+<p>Output(stdout)：输出日志位置</p>
+<p>Error(stderr)：错误日志位置</p>
+<p>点击Install service，安装服务 </pre></p>
+<p><img src="https://cdn.52degg.top/nssm7.png" alt=""></p>
+<p>服务hardwaredi安装成功</p>
+<p>4、点击此电脑-&gt;管理-&gt;服务和应用程序-&gt;服务：</p>
+<p><img src="https://cdn.52degg.top/nssm8.png" alt=""></p>
+<p>5、nssm命令：</p>
+<ul>
+<li>nssm install &lt;服务名&gt; 安装服务</li>
+<li>nssm remove &lt;服务名&gt; 删除服务</li>
+<li>nssm remove &lt;服务名&gt; confirm 删除服务确定</li>
+<li>nssm edit &lt;服务名&gt; 修改服务（显示界面修改）</li>
+<li>nssm start &lt;服务名&gt; 启动服务</li>
+<li>nssm stop &lt;服务名&gt; 停止服务</li>
+<li>nssm restart &lt;服务名&gt; 重启服务</li>
+</ul>
+
       
        <hr><span style="font-style: italic;color: gray;"> ~~~ </span>
     </div>
